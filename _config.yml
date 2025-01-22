@@ -21,7 +21,7 @@ repository               : "https://github.com/Seifbb"  #"academicpages/academic
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Session Seif-27.png"
+  avatar           : "SessionSeif-27.png"
   name             : "Seif Ben Bader"
   pronouns         : # example: "she/her"  
   bio              : "AI/ML Research Scientist"
