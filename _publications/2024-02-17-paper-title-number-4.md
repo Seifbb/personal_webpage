@@ -1,13 +1,13 @@
 ---
-title: "Paper Title Number 4"
+title: "Data-centric workloads with MPI_Sort"
 collection: publications
-category: conferences
+category: manuscripts
 permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
+excerpt: 'TBD-description.' #This paper is about fixing template issue #693.'
 date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+venue: 'Journal of Parallel and Distributed Computing'
+paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S0743731523002034'
+citation: 'Zulian P., Ben Bader S., Fourestey G., Krause R., and Rossinelli, D.'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Sorting is a fundamental task in computing and plays a central role in information technology. The advent of rack-scale and warehouse-size data processing shaped the architecture of data analysis platforms towards supercomputing. In turn, established techniques on supercomputers have become relevant to a wider range of application domains. This work is concerned with multi-way mergesort with exact splitting on distributed memory architectures. At its core, our approach leverages a novel and parallel algorithm for multi-way selection problems. Remarkably concise, the algorithm relies on MPI_Allgather and MPI_ReduceScatter_block, two collective communication schemes that find hardware support in most high-end networks. A software implementation of our approach is used to process the Terabyte-size Data Challenge 2 signal, released by the SKA radio telescopes organization. On the supercomputer considered herein, our approach outperforms the state of the art by up to 2.6X using 9,216 cores. Our implementation is released as a compact open source library compliant to the MPI programming model. By supporting the most popular elementary key types, and arbitrary fixed-size value types, the library can be straightforwardly integrated into third-party MPI-based software.
