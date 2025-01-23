@@ -5,7 +5,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: 'TBD-description.'
-date: 2021
+date: 2021-01-01
 venue: 'USI Faculty of Informatics'
 slidesurl: #'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://folia.unifr.ch/global/documents/320996'
