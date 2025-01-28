@@ -1,9 +1,3 @@
-# ---
-# title: "Eclexys (2022-2024)"
-# excerpt: #"Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-# collection: industry
-# ---
-
 ---
 title: "First Professional Experience (2021-2023)"
 excerpt: "This document summarizes my first professional experience, which spans several exciting projects in the fields of Cybersecurity and AI healthcare."
