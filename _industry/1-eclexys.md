@@ -16,19 +16,29 @@ During my professional experience at Eclexys, I had the opportunity to work on A
 
 ### Project 1: Malware detection
 
-In this project, the idea consisted in analyzing collected executables suspected of representing malware samples. 
-Initially, those executables are represented by a sequence of APIs, from which fingerprints from specific malwares can be identified by leveraging AI techniques.
-
-#### Initial thoughs 
-Millions of existing APIs shall better be grouped and categorized 
-
-
-
-This project involved designing and implementing a secure network infrastructure for a mid-sized healthcare provider. The goal was to ensure data protection and comply with regulatory standards, such as HIPAA.
-
 - **Role**: Lead Network Engineer
-- **Technologies used**: Firewalls, VPN, IDS/IPS, SSL/TLS
-- **Results**: Enhanced security posture, reduced cyber threats by 40%
+- **Technologies used**: Dimensionality reduction methods (t-SNE, UMAP), NLP (TF-IDF, Doc2Vec), auto-encoders, clustering
+- **Benchmark**: 1000 samples belonging to five malware families 
+- **Results**: 100% classification accuracy on the benchmark, several new malwares detected on deployment 
+
+In this project, the idea consisted in analyzing collected executables suspected of representing malware samples. The main objective was to leverage their API representation in order to identify main malwares' fingerprints, enabling their systematic detection by AI automated techniques, no matter the obfuscation techniques employed.
+
+
+#### The starting point
+We proceeded by grouping APIs into categories describing their type of actions, e.g. read (r), write (w), or file (f) operations. Likewise, the initial API representation was spanned in a lower dimensional dictionary of actions, in such a way any executable original representation was translated into a finite sequence characters (e.g. fffwwrwrr ... ). 
+
+Note: The dictionary of values grouping APIs is actually much larger than the example cited above, but cannot be disclosed. 
+
+#### Entropy representation
+Provided this new representation in terms of finite dictionary values, we could now infer probability distributions and leverage Shannon entropy representation for each executable. This not only provided a conversion in numerical values of original samples, but also provided a powerful graphical insight, allowing for immediate naked eye detection of similar patterns between different samples. 
+
+#### Explored solutions
+Being able to detect similar malwares by simply comparing their entropy representation is an interesting feature but much more may be achieved with ML techniques. By considering the entropy representation as numerical time-series, several methods can be employed here for classification. However, leveraging time-series clustering in this situation might be quite tedious due to their different lengths, and the employed obfuscation techniques.
+
+#### Optimal retained solution
+ After several employed methods around entropy representation, a step back was taken by reconsidering the character representation of each sample. 
+
+
 
 ![Secure Network Infrastructure](path/to/your/image1.png)
 
