@@ -55,8 +55,8 @@ We were able to detect several malwares primarily absent from our database. Once
 
 #### Summary
 
-- **Role**: Lead Network Engineer
-- **Technologies used**: Dimensionality reduction methods (t-SNE, UMAP), NLP (TF-IDF, Doc2Vec), auto-encoders, clustering
+- **Goal**: Detect and identify malwares from raw API representation 
+- **Technologies used**: Dimensionality reduction methods (t-SNE, UMAP), NLP (TF-IDF, Doc2Vec), auto-encoders, clustering (DBSCAN, HDBSCAN)
 - **Benchmark**: 1000 samples belonging to five malware families 
 - **Results**: 100% classification accuracy on the benchmark, several new malwares detected on deployment 
 - **Deployment**: Successful deployment, continuous running and follow-up on novel detections
@@ -64,11 +64,38 @@ We were able to detect several malwares primarily absent from our database. Once
 ![Secure Network Infrastructure](path/to/your/image1.png)
 
 ### Project 2: Command prompt analysis - Anomaly detection & deviation from baseline (masquerade detection)
-In this project, I performed a thorough vulnerability assessment of internal systems, identifying and mitigating security risks that could have been exploited by attackers.
 
-- **Role**: Security Analyst
-- **Technologies used**: Nessus, Metasploit, Burp Suite
-- **Results**: Identified and fixed 50+ critical vulnerabilities
+In the realm of cybersecurity and IT management, monitoring command prompt activities is crucial for
+detecting unauthorized actions and ensuring system integrity. Command prompts, while powerful tools
+for legitimate users, can also serve as entry points for malicious activities if misused. Automated analysis
+of command prompt activities not only helps in proactive monitoring but also significantly enhances the
+ability to quickly respond to potential threats. 
+
+In this project, we therefore addressed command prompts and the possibility of raising automated alerts on the basis on detected malicious or unusual activities. We developed essentially two approaches:
+- **Supervised**: Detecting specific Atomic Red Teaming (ART) attacks  
+- **Unsupervised**: Detecting irregular activities within a specific network
+
+We furthermore developed active learning techniques that took advantage from domain expertise in order to reduce False Positives during deployment.
+
+#### Command prompts tokenization and NLP embeddings 
+Although structured and following a specific logic, command prompts, unlike natural language, does not provide a straightforward decoupling into tokens. A specific work needed to be done with this regards that takes into consideration existence of paths, network-specific directories' names, parameters' variablity (e.g. a different ProcessId's, times, etc, ...), and several other aspects that might interfere with comparing specific actions or intent of a set of commands. 
+
+We here addressed the problem by leveraging and comparing the performance of several tokenizations that decouples paths in different ways, lowered the influence of directories' name, and created placeholders for a certain type of parameters, such as numbers, hashes, IP addresses, and so on. Once the tokens are produced within a specific corpus, we use regular NLP techniques for numerically embedding each command. We compared FastText and TF-IDF, both in the word and character based fashion. 
+
+#### Supervised approach for ART detection
+Since we needed labeled data for this approach, we used ART attacks from an open-source project developed by Red Canary (c.f. [https://github.com/redcanaryco/atomic-red-team](https://github.com/redcanaryco/atomic-red-team)). The initiative provides a library of security tests, which are mapped to the MITRE ATT&CK® framework.
+
+We constructed a labeled dataset around this data (as positive class instances), coupled with locally generated data from regular network activity, simulated on our labs (as negative class instances). As model, we opted for XGBoost and hypertuned parameters to reach training and test accuracies of respectively 98,45% and 97,5%. We conducted a benchmark experiment where we run around 500 ART attacks, randomly executed within a network of computers. The rate of attacks compared to the amount of regular commands represented around 1%. The experiments results yielded a precision of approximately 93% and a recall of 87%.  
+
+#### Unupervised approach for detecting deviation from baseline activities
+Malicious activity within a network do not necessarily characterize throughout ART attacks. We therefore developed a second approach meant for detecting irregular activity that deviates from the standard behaviour of a specific user. The aim consisted in generating alerts for actions, that were either considered by domain experts as legit and simply novel (install new programs, softwares, new user), either evaluated as suspicious and worth further investigation. The algorithm acted therefore as a decision support system for domain experts to monitor and assess thousands of daily commands, while only leveraging a very little number of alerts. 
+
+For this approach, we relied on auto-encoders. More specifically, we selected data from a specific network and made sure no malicious activity were detected. This data was then used for training an auto-encoder, for which a distribution of the reconstruction loss was constructed. A threshold corresponding to 98th-percentile of that distribution was then fixed, and command prompts with a higher reconstruction loss were judged irregular. 
+
+Building performance metrics' on this approach is somehow not straightforward, since "irregular activity" is not necessarily malicious. We therefore asked our domain experts during deployment to assess the alerts for whether the latter were considered interesting and worth further exploration, or whether they were simply uninteresting. The experiments were conducted on three separate and distinct network and yielded precisions of 39%, 74% and 79%. The difference in results found explanation in the quantity of available data on each network, where precision systematically augmented with more available data. 
+
+#### Active learning for the unsupervised approach
+
 
 ![Vulnerability Assessment](path/to/your/image2.png)
 
