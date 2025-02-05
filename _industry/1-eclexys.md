@@ -122,7 +122,7 @@ During the pilot phase, 102 patients uniformly distributed across 4 countries ar
 #### AEWSDT and the developped solutions 
 The following components were developed: 
 
-- **Monitoring of Intrinsic Capacity (IC) and trajectory prediction**: [IC] (https://www.vitality-medicine-and-engineering-journal.com/2551-w-h-o-world-health-organization-program-on-maintaining-intrinsic-capacities-with-aging.html) is a World Health Organization developed and validated concept. It refers to the individual's inherent ability to function across various domains of life, such as physical, mental, and social functions. It has also been proved that its decline correlates directly with a decline in the Activities of Daily Living (ADL). 
+- **Monitoring of Intrinsic Capacity (IC) and trajectory prediction**: [IC](https://www.vitality-medicine-and-engineering-journal.com/2551-w-h-o-world-health-organization-program-on-maintaining-intrinsic-capacities-with-aging.html) is a World Health Organization developed and validated concept. It refers to the individual's inherent ability to function across various domains of life, such as physical, mental, and social functions. It has also been proved that its decline correlates directly with a decline in the Activities of Daily Living (ADL). 
 
 We developed mathematical models involving the monitored data to continuously track on IC, and used ML forecasting methods for its prediction in time, offering a visibility on a potential decline in an elderly's capailities.
 
@@ -131,7 +131,7 @@ We developed mathematical models involving the monitored data to continuously tr
  We therefore leveraged the collected data for automatically evaluate the dementia profile of specific person, and provide clinicians with a very precise and accurate classification tool. We furthermore developed a probabilistic approach for evaluating the chances of progressing towards different classes of cognitive impairment, enabling early warning alerts when a cognitive decline was perceived. 
 
 
-- **Risk statification**: We evaluate the [frailty] (https://www.cfn-nce.ca/frailty-matters/what-is-frailty/) score of participants using collected questionnaire data. 
+- **Risk statification**: We evaluate the [frailty](https://www.cfn-nce.ca/frailty-matters/what-is-frailty/) score of participants using collected questionnaire data. 
 
 #### Additional developments    
 
@@ -141,14 +141,12 @@ On top of the AEWSDT tasks described above, we also worked on the follwoing solu
 
  - **Wandering detection**: With the motion sensors, we developed wandering detection based on specific patterns.
 
-
 As part of the AI healthcare team, I contributed to the development of an AI-based diagnostic tool that aids doctors in diagnosing rare diseases by analyzing medical imaging data.
 
 #### Summary 
 
 - **Role**: Responsible and developer of AI-based solutions
 - **Technologies used**: mathematical modeling, time-series forecasting and anomaly detection, multi-class logistic regression 
-
 
 
 ### Project 2: CAREUP
@@ -159,3 +157,8 @@ In CAREUP, I worked on creating a framework for evaluating and predicting IC. I 
 
 TBD: put papers here 
 
+---
+
+## Conclusion
+
+I deeply enjoyed my multi-disciplinary experience at Eclexys. I had the chance to work on developing novel and state-of-the-art tools for cybersecurity activities, which was for me a perfect compromise for brindging the gap between research and industry. When it comes to the healthcare experience, I grew an important experience collaborating with different profiles of people and enjoyed the responsibility of leading ML activities, aiming to the creation of AI tools delivered for the healthy ageing of elderly.  
