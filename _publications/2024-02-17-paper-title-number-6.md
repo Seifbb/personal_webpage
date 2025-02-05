@@ -1,8 +1,8 @@
 ---
-title: "ML-based Short Physical Performance Battery future score prediction based on questionnaire data"
+title: "CAREUP: An Integrated Care Platform with Intrinsic Capacity Monitoring and Prediction Capabilities"
 collection: publications
 category: manuscripts
-permalink: /publication/ML-based-sppb-future-score-prediction-based-on-questionnaire-data
+permalink: /publication/ML-based-Short-Physical-Performance-Battery-future-score-prediction-based-on-questionnaire-data
 excerpt: 'TBD-description.' #This paper is about fixing template issue #693.'
 date: 2024-11-17
 venue: '32nd Telecommunications Forum (TELFOR)'
