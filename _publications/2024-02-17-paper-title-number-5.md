@@ -3,7 +3,7 @@ title: "ML-based Short Physical Performance Battery future score prediction base
 collection: publications
 category: manuscripts
 permalink: /publication/ML-based-sppb-future-score-prediction-based-on-questionnaire-data
-excerpt: 'A paper elaborated throughout a close collaboration with Dr Macin Kolakowski from Warsaw University of Technology (WUT) during the CAREUP project. We explain the methodology developed for prediction patients Intrinsic Capacity.' #This paper is about fixing template issue #693.'
+excerpt: 'A paper elaborated during a close collaboration with Dr Macin Kolakowski from Warsaw University of Technology (WUT) during the CAREUP project. We explain the methodology developed for prediction patients Intrinsic Capacity.' #This paper is about fixing template issue #693.'
 date: 2024-11-17
 venue: '32nd Telecommunications Forum (TELFOR)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10819122'

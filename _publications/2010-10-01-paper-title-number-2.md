@@ -4,7 +4,7 @@ application to cardiac electrophysiology"
 collection: publications
 category: manuscripts
 permalink: /publication/Space-time-multilevel-monte-carlo-methods-and-their-application-to-cardiac-electrophysiology
-excerpt: 'The first and one of tha main papers published during my thesis. We treat the uncertainty related to heart fibers orientation and its effects on the activation map. We conduct Monte-Carlo studies and use multilevel strategies for reducing the computational costs.' #'This paper is about the number 2. The number 3 is left for future work.'
+excerpt: 'The first and one of the main papers published during my thesis. We treat the uncertainty related to heart fibers orientation and its effects on the cardiac activation map. We conduct Monte-Carlo studies and use multilevel strategies for reducing the computational costs.' #'This paper is about the number 2. The number 3 is left for future work.'
 date: 2021-02-02
 venue: 'Journal of Computational Physics'
 slidesurl: #'http://academicpages.github.io/files/slides2.pdf'
