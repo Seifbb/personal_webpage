@@ -2,7 +2,7 @@
 title: "ML-based Short Physical Performance Battery future score prediction based on questionnaire data"
 collection: publications
 category: manuscripts
-permalink: /publication/2024-02-17-paper-title-number-5
+permalink: /publication/ML-based-Short-Physical-Performance-Battery-future-score-prediction-based-on-questionnaire-data
 excerpt: 'TBD-description.' #This paper is about fixing template issue #693.'
 date: 2024-11-17
 venue: '32nd Telecommunications Forum (TELFOR)'

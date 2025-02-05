@@ -1,5 +1,6 @@
 ---
 title: "Intern - iCeBound Project (HEPIA, CERN and the City of Geneva)"
+permalink: /industry/hepia
 excerpt: " In 2016, I collaborated with the Haute école du paysage, d'ingénierie et d'architecture (HEPIA), the CERN and the city of Geneva on the iCeBound project. The project aimed at calculating the solar radiation map of the city of Geneva, such that this provides a prior quantitative information on the amount of produceable solar energy induced by specific solar pannel installations.  
 
 	The calculation model heavily relied on a specific and critical parameter, denoted as as Sky Viewing Factor (SVF). Every location in space would have a specific SVF value between 0 and 1, describing the amount of clear sky view for that location, depending on the surrounding buildings. The SVF calculation for a small piece of land suffered extremely high computational costs on its initial CPU implementation. 
