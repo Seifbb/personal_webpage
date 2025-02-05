@@ -2,12 +2,12 @@
 title: "CAREUP: An Integrated Care Platform with Intrinsic Capacity Monitoring and Prediction Capabilities"
 collection: publications
 category: manuscripts
-permalink: /publication/ML-based-Short-Physical-Performance-Battery-future-score-prediction-based-on-questionnaire-data
+permalink: /publication/CAREUP-an-integrated-care-platform-with-intrinsic-capacity-monitoring-and-prediction-apabilities
 excerpt: 'TBD-description.' #This paper is about fixing template issue #693.'
-date: 2024-11-17
-venue: '32nd Telecommunications Forum (TELFOR)'
-paperurl: 'https://ieeexplore.ieee.org/abstract/document/10819122'
-citation: 'Kolakowski M., Ben Bader S.'
+date: 2025-02-01
+venue: 'MDPI-Sensors'
+paperurl: 'https://www.mdpi.com/1424-8220/25/3/916'
+citation: 'Kolakowski M., Lupica A., Ben Bader S, et. Al .'
 ---
 
-Effective slowing down of older adults’ physical capacity deterioration requires intervention as soon as the first symptoms surface. In this paper, we analyze the possibility of predicting the Short Physical Performance Battery (SPPB) score at a four-year horizon based on questionnaire data. The ML algorithms tested included Random Forest, XGBoost, Linear Regression, dense and TabNet neural networks. The best results were achieved for the XGBoost (mean absolute error of 0.79 points). Based on the Shapley values analysis, we selected smaller subsets of features (from 10 to 20) and retrained the XGBoost regressor, achieving a mean absolute error of 0.82.
+This paper describes CAREUP, a novel older adult healthy aging support platform based on Intrinsic Capacity (IC) monitoring. Besides standard functionalities like storing health measurement data or providing users with personalized recommendations, the platform includes novel intrinsic capacity assessment and prediction algorithms. Older adults’ performance is continuously monitored in all five IC domains—locomotion, psychology, cognition, vitality, and sensory capacity—based on measurement results and answers to questionnaires gathered using the platform’s mobile applications. The users are also presented with a machine learning-based prediction of how their intrinsic capacity might change over the following years. The platform’s operation was successfully tested with the participation of older adults and their caregivers in three countries: Austria, Italy, and Romania.
