@@ -95,33 +95,67 @@ For this approach, we relied on auto-encoders. More specifically, we selected da
 Building performance metrics' on this approach is somehow not straightforward, since "irregular activity" is not necessarily malicious. We therefore asked our domain experts during deployment to assess the alerts for whether the latter were considered interesting and worth further exploration, or whether they were simply uninteresting. The experiments were conducted on three separate and distinct network and yielded precisions of 39%, 74% and 79%. The difference in results found explanation in the quantity of available data on each network, where precision systematically augmented with more available data. 
 
 #### Active learning for the unsupervised approach
+We enhance our alert system with an active learning mechanism, based the on methodology developed in (TBD:cite Deep active learning for
+anomaly detection paper). Essentially, the method involves an additional supervised layer on top of the initial AD auto-encoder. More precisely, we extract both the latent representation and reconstruction error for the samples positively flagged (unusual). We concatenate those to form single vectors before feeding them to an additional supervised layer leveraging the labels provided by domain expertise. In the original paper (TBD:cite same paper), a single-layer neural network is considered but in theory any supervised algorithm could be employed. We here took advantage of a double-layer neural network after a Bayesian hyperparameter search.
+
+On deployment, the active learning enhancement showed to raise the precision around 90%, while maintaining the recall to a reasonable 80%, for a total accuracy of 94%.
 
 
-![Vulnerability Assessment](path/to/your/image2.png)
+#### Deployment state 
+Both approaches are deployed on three client sites, with the unsupervised enhanced by the additional active learning feedback. They raise alerts on a daily basis with a very reduced amount of False Positives. Eventually, we program new auto-encoder training every third month to integrate new regular activity. 
+
+
 
 ---
 
 ## Healthcare
 
-### Project 1: AI-Based Diagnostic Tool
+### Project 1: CAREPATH
+
+[CAREPATH](https://www.carepath.care/) is a Horizon 2020’s funded project that proposes an ICT based solution for the optimization of clinical practice in the treatment and management of multimorbid elderly patients with Mild Cognitive Impairment or Mild Dementia. The project is composed by a consortium of 10 partners from multi-disciplinary environments involving clinicians, academicians and technicians of very different background. 
+
+My specific role in this project was to develop all the ML machinery related to the Advanced Early Warning Smart Decision Tools (AEWSDT), a block of state-of-the-art AI-based diagnostic tools leveraging all the monitored data of the project for several well-being purposes.
+
+#### Collected data 
+During the pilot phase, 102 patients uniformly distributed across 4 countries are constantly monitored with respect to their vital biomarkers. These are provided throughout connected medical devices. They are also equipped with connected smartwatches, that constantly report on their sleeping and movement data. The houses they live in are additionally supplied with domotic sensors of all kind (temperature, air quality, door/motion sensors). Questionnaire data are also meant to be collected a several milstones of the project. 
+
+#### AEWSDT and the developped solutions 
+The following components were developed: 
+
+- **Monitoring of Intrinsic Capacity (IC) and trajectory prediction**: [IC] (https://www.vitality-medicine-and-engineering-journal.com/2551-w-h-o-world-health-organization-program-on-maintaining-intrinsic-capacities-with-aging.html) is a World Health Organization developed and validated concept. It refers to the individual's inherent ability to function across various domains of life, such as physical, mental, and social functions. It has also been proved that its decline correlates directly with a decline in the Activities of Daily Living (ADL). 
+
+We developed mathematical models involving the monitored data to continuously track on IC, and used ML forecasting methods for its prediction in time, offering a visibility on a potential decline in an elderly's capailities.
+
+ - **Dementia profile estimation**: The project is centered around people at risk of developing dementia. Dementia diagnosis is a heavy procedure that involves clinical evaluation and tests that represent a heavy burden for the  healthcare system. They aim at classifying a person among one of these categories: (1) normal cognition, (2) Mild cognitive impairment, (3) Mild dementia, (4) Moderate dementia, and (5) Severe dementia. 
+
+ We therefore leveraged the collected data for automatically evaluate the dementia profile of specific person, and provide clinicians with a very precise and accurate classification tool. We furthermore developed a probabilistic approach for evaluating the chances of progressing towards different classes of cognitive impairment, enabling early warning alerts when a cognitive decline was perceived. 
+
+
+- **Risk statification**: We evaluate the [frailty] (https://www.cfn-nce.ca/frailty-matters/what-is-frailty/) score of participants using collected questionnaire data. 
+
+#### Additional developments    
+
+On top of the AEWSDT tasks described above, we also worked on the follwoing solutions:
+
+ - **Anomaly detection for home monitored data**: We followed on the domotics sensors and provided early warning to clinicians on the basis of detect anomalies in the home monitored data.
+
+ - **Wandering detection**: With the motion sensors, we developed wandering detection based on specific patterns.
+
+
 As part of the AI healthcare team, I contributed to the development of an AI-based diagnostic tool that aids doctors in diagnosing rare diseases by analyzing medical imaging data.
 
-- **Role**: AI Research Assistant
-- **Technologies used**: TensorFlow, Python, CNNs
-- **Results**: Achieved 85% diagnostic accuracy, improving early detection of diseases
+#### Summary 
 
-![AI Diagnostic Tool](path/to/your/image3.png)
+- **Role**: Responsible and developer of AI-based solutions
+- **Technologies used**: mathematical modeling, time-series forecasting and anomaly detection, multi-class logistic regression 
 
-### Project 2: Predictive Healthcare Analytics
-This project focused on using machine learning to predict patient outcomes based on historical data, aiming to improve healthcare delivery and resource allocation.
 
-- **Role**: Data Scientist
-- **Technologies used**: Scikit-learn, Pandas, Jupyter
-- **Results**: Developed a model with 90% accuracy for predicting patient risk levels
 
-![Predictive Healthcare Analytics](path/to/your/image4.png)
+### Project 2: CAREUP
 
----
+[CAREUP](https://www.aal-europe.eu/projects/careup/) is an [AAL](https://www.aal-europe.eu/) funded project in which the main goal was to develop an integrated care platform based on the monitoring of older individual Intrinsic Capacity (IC) for inclusive health. The project is composed by a consortium of 9 partners, from multi-disciplinary environments just like CAREPATH (see above).
 
-## Conclusion
-This experience has provided a solid foundation in both cybersecurity and AI healthcare, which I continue to build upon in my career.
+In CAREUP, I worked on creating a framework for evaluating and predicting IC. I collaborated extensively with [INRCA](https://www.inrca.it/inrca/) researchers and [WUT](https://iot.ire.pw.edu.pl/) academicians on delivering a questionnaire-based evaluation of IC, and providing forecasting methods based on longitudinal collected data from different sources. The project is on the piloting phase (year 2025), and the collaboration work yielded co-authorship in two papers:
+
+TBD: put papers here 
+
