@@ -3,7 +3,7 @@ title: "CAREUP: An Integrated Care Platform with Intrinsic Capacity Monitoring a
 collection: publications
 category: manuscripts
 permalink: /publication/CAREUP-an-integrated-care-platform-with-intrinsic-capacity-monitoring-and-prediction-apabilities
-excerpt: 'TBD-description.' #This paper is about fixing template issue #693.'
+excerpt: 'A paper published on the basis of the work delivered by the Consortium of partners for the CAREUP project.' #This paper is about fixing template issue #693.'
 date: 2025-02-01
 venue: 'MDPI-Sensors'
 paperurl: 'https://www.mdpi.com/1424-8220/25/3/916'

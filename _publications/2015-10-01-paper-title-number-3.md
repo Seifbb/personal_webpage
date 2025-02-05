@@ -3,8 +3,8 @@ title: "Space-time multilevel quadrature methods and their
 application to cardiac electrophysiology"
 collection: publications
 category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'TBD-description.' #This paper is about the number 3. The number 4 is left for future work.'
+permalink: /publication/Space-time-multilevel-quadrature-methods-and-their-application-to-cardiac-electrophysiology
+excerpt: 'This paper represents a completion of its predecessor, Space-time multilevel Monte Carlo methods and their application to cardiac electrophysiology (see below), implementing the quasi-Monte Carlo and multilevel quasi-Monte Carlo methods.' #This paper is about the number 3. The number 4 is left for future work.'
 date: 2023-01-01
 venue: 'Journal of Uncertainty Quantification'
 slidesurl: #'http://academicpages.github.io/files/slides3.pdf'
