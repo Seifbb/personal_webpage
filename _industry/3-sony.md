@@ -1,5 +1,6 @@
 ---
 title: "Intern in the Computational Imaging Group (Sony)"
+permalink: /industry/sony
 excerpt: " In 2015, I joined Sony Deutschland Gmbh (more precisely the Stuttgart Technology center) where I accomplished a 6 months internship. It was my very first working experience, projecting me in a very international environment with very skilled people. At Sony, I learned to convert academic skills into concrete industrial inputs, delivering algorithm implementation from reading state-of-the-art related articles.
 
 	I worked in the Computational Imaging Group, and my task consisted essentially in delivering a light field toolbox. I learned the topic from scratch and did my first steps with Computer Vision applications. The link above provides a more detailed overview about this experience."
