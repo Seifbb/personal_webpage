@@ -12,14 +12,14 @@ excerpt: "AI/ML Research Scientist | Ph.D. in Applied Mathematics"
 Innovative AI/ML Research Scientist with a Ph.D. in Applied Mathematics and over 2 years of industry experience. Specialized in developing cutting-edge machine learning solutions for cybersecurity and biomedical applications. Proven track record of translating complex mathematical concepts into practical, high-impact AI systems. Adept at bridging the gap between academic research and industry needs, with a focus on anomaly detection, unsupervised learning, and natural language processing. Seeking challenging roles to leverage my interdisciplinary expertise in AI, cybersecurity, and healthcare to drive technological advancements and solve complex real-world problems
 
 
-<div class="grid-container">
-  <div class="education">
+<div class="row">
+  <div class="column">
     ## Education
     - Ph.D. in Applied Mathematics, [University]
     - M.Sc. in [Field], [University]
     - B.Sc. in [Field], [University]
   </div>
-  <div class="interests">
+  <div class="column">
     ## Research Interests
     - Anomaly Detection
     - Unsupervised Learning
@@ -30,10 +30,12 @@ Innovative AI/ML Research Scientist with a Ph.D. in Applied Mathematics and over
 </div>
 
 <style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+  padding: 10px;
 }
 </style>
 
