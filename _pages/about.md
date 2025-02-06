@@ -11,15 +11,25 @@ redirect_from:
 
 Innovative AI/ML Research Scientist with a Ph.D. in Applied Mathematics and over 2 years of industry experience. Specialized in developing cutting-edge machine learning solutions for cybersecurity and biomedical applications. Proven track record of translating complex mathematical concepts into practical, high-impact AI systems. Adept at bridging the gap between academic research and industry needs, with a focus on anomaly detection, unsupervised learning, and natural language processing. Seeking challenging roles to leverage my interdisciplinary expertise in AI, cybersecurity, and healthcare to drive technological advancements and solve complex real-world problems
 
-## Interests
-- Machine Learning
-- Gaussian Processes
-- Time Series
-
-## Education
-- Ph.D. in Artificial Intelligence, University of XYZ, 2022
-- Master’s in Statistics, University of XYZ, 2017
-- Bachelor’s in Computer Science, University of XYZ, 2014
+<div class="flex-container">
+  <div class="flex-item">
+    <h3>Interests</h3>
+    <ul>
+      <li>Machine Learning</li>
+      <li>Gaussian Processes</li>
+      <li>Time Series</li>
+    </ul>
+  </div>
+  
+  <div class="flex-item">
+    <h3>Education</h3>
+    <ul>
+      <li>Ph.D. in Artificial Intelligence, University of XYZ, 2022</li>
+      <li>Master’s in Statistics, University of XYZ, 2017</li>
+      <li>Bachelor’s in Computer Science, University of XYZ, 2014</li>
+    </ul>
+  </div>
+</div>
 
 
 ## Recent Publications
