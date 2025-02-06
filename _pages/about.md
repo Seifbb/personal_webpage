@@ -3,6 +3,9 @@ layout: single
 title: "About me"
 permalink: /
 author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
 excerpt: "AI/ML Research Scientist | Ph.D. in Applied Mathematics"
 ---
 
@@ -33,7 +36,7 @@ AI/ML Research Scientist at [Your Current Company]
 2. [Title of Publication 2], [Journal/Conference], [Year]
 3. [Title of Publication 3], [Journal/Conference], [Year]
 
-[View All Publications](/publications)
+[View All Publications](https://seifbb.github.io/personal_webpage/publications/)
 
 ## Contact
 
@@ -42,6 +45,9 @@ LinkedIn: [Your LinkedIn Profile]
 GitHub: [Your GitHub Profile]
 
 [Download CV](/assets/pdf/your_cv.pdf){: .btn .btn--primary}
+
+
+
 
 
 
