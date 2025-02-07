@@ -20,16 +20,16 @@ The iCeBound project is a collaborative project between Hepia, CERN and the city
 
 The model for computing the radiation map relies on a computationally costly algorithm, the Sky Viewing Factor, as this took initially around 150 minutes on 40 CPUs to be computed for a small portion of land. My primary task was to transfer an existing cloud based implementation to GPUs in order to investigate the potential of acceleration and a subsequent deployment of the GPU based software.
 
-![Block diagram for calculating the radiation map](../images/block_diagram_radiation_process.png)
+<img src="../images/block_diagram_radiation_process.png" alt="Block diagram for calculating the radiation map" width="300" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
+
 
 
 The outcome of the project was quite satisfying, as it led to a demonstrated 
 acceleration of two orders of magnitude (10 times faster on a single GPU compared to 40 CPUs), hence enabling the modeling of the entire Geneva region. The implementation on multiple GPUs was further deployed on the Amazon Web Services cloud for public use purposes, with a treatment cost reduced by a factor of 100 in comparison with the initial code version.
 
-<iframe src="../slides/master_thesis_hepia.pdf" width="10%" height="60px"></iframe>
+<img src="../images/GPU_performance.png" alt="GPU speed-up" width="300" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
 
-![PDF Preview](path/to/first-page-image.jpg)
-
-[Download the PDF](path/to/your/file.pdf)
+[Download the poster](../slides/poster_hepia.pdf)
+[Download the report](../slides/master_thesis_hepia.pdf)
 
 
