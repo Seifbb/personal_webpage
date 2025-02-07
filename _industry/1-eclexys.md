@@ -173,7 +173,7 @@ In CAREUP, I worked on creating a framework for evaluating and predicting IC. I 
 
 
 #### Project co-authored papers
-TBD: put papers here 
+
 1. [*CAREUP: An Integrated Care Platform with Intrinsic Capacity Monitoring and Prediction Capabilities*](https://seifbb.github.io/personal_webpage/publication/CAREUP-an-integrated-care-platform-with-intrinsic-capacity-monitoring-and-prediction-apabilities), MDPI-Sensors, 2025
 2. [*ML-based Short Physical Performance Battery future score prediction based on questionnaire data*](https://seifbb.github.io/personal_webpage/publication/ML-based-sppb-future-score-prediction-based-on-questionnaire-data), 32nd Telecommunications Forum (TELFOR), 2024
 
