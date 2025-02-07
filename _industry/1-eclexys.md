@@ -3,7 +3,7 @@ title: "AI/ML Research Scientist (Eclexys-Octilium)"
 permalink: /industry/eclexys
 excerpt: " In 2022, I joined [Eclexys-Octilium](http://eclexys.com) a cybersecurity company located in Lugano, Switzerland. My primary responsibility was to develop innovative machine learning strategies for detecting malicious activity, using data gathered from a variety of sources. Given the company's strong cybersecurity expertise in securing medical data, I also contributed to healthcare projects focused on delivering innovative AI approaches. This experience allowed me to collaborate on the development of ML solutions for several European healthcare projects funded by Horizon 2020.
 
-	The link above provides an overview of my professional journey at Eclexys, which includes exciting AI-driven projects in both cybersecurity and healthcare."
+	The link above provides an overview of my professional journey at Eclexys-Octilium, which includes exciting AI-driven projects in both cybersecurity and healthcare."
 collection: industry
 ---
 
