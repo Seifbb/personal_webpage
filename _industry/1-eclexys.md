@@ -51,7 +51,8 @@ of clusterability" (cite the article, talk about deep clustering). We used t-SNE
 #### The benchmark
 Although the algorithm was designed to be employed in the wild, we still needed some benchmark for evaluating the methodology. We designed a database of 1000 well identified malwares, distibuted homogeneously across five families. The result was 100% classification accuracy, and the method was judged stable with respect to the several hyperparameters (Doc2Vec several parameters, auto-encoder dimension, manifold learning method parameters). 
 
-![Clustering results](path/to/your/image1.png)
+<img src="../images/Clustering malwares.png" alt="Clusters of malwares projected in 2D for visualization" width="600" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
+
 
 #### Deployment
 We were able to detect several malwares primarily absent from our database. Once important collection of each was recovered, we built malware classifiers, in a classical multi-class logistic approach.
