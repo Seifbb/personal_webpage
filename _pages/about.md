@@ -25,7 +25,7 @@ I am always looking for new challenges where I can apply my interdisciplinary ex
 
 1. CAREUP: An Integrated Care Platform with Intrinsic Capacity Monitoring and Prediction Capabilities, MDPI-Sensors, 2025
 2. ML-based Short Physical Performance Battery future score prediction based on questionnaire data, 32nd Telecommunications Forum (TELFOR), 2024
-3. Data-centric workloads with MPI_Sort], [Journal of Parallel and Distributed Computing, 2024
+3. Data-centric workloads with MPI_Sort, Journal of Parallel and Distributed Computing, 2024
 
 [View All Publications](https://seifbb.github.io/personal_webpage/publications/)
 
