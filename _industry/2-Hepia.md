@@ -20,6 +20,7 @@ The iCeBound project is a collaborative project between Hepia, CERN and the city
 
 The model for computing the radiation map relies on a computationally costly algorithm, the Sky Viewing Factor, as this took initially around 150 minutes on 40 CPUs to be computed for a small portion of land. My primary task was to transfer an existing cloud based implementation to GPUs in order to investigate the potential of acceleration and a subsequent deployment of the GPU based software.
 
+![Block diagram for calculating the radiation map](block_diagram_radiation_process.png)
 
 
 The outcome of the project was quite satisfying, as it led to a demonstrated 
