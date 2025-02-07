@@ -29,7 +29,7 @@ Note: The dictionary of values grouping APIs is actually much larger than the ex
 Provided this new representation in terms of finite dictionary values, we could now infer probability distributions and leverage Shannon entropy representation for each executable. This not only provided a conversion in numerical values of original samples, but also provided a powerful graphical insight, allowing for immediate naked eye detection of similar patterns between different samples. 
 
 
-<img src="../images/entropy_example.png" alt="Example of an entropy representation of a specific malware" width="400" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
+
 
 <div style="display: inline-block; margin-right: 10px;">
   <img src="../images/malware_1.png" alt="Image 1" width="300" height="auto">
@@ -42,7 +42,7 @@ Provided this new representation in terms of finite dictionary values, we could 
 
   <div style="display: inline-block;">
   <img src="../images/malware_5.png" alt="Image 4" width="300" height="auto">
-
+</div>
 </div>
 
 #### Explored solutions
@@ -65,7 +65,7 @@ of clusterability" (cite the article, talk about deep clustering). We used t-SNE
 #### The benchmark
 Although the algorithm was designed to be employed in the wild, we still needed some benchmark for evaluating the methodology. We designed a database of 1000 well identified malwares, distibuted homogeneously across five families. The result was 100% classification accuracy, and the method was judged stable with respect to the several hyperparameters (Doc2Vec several parameters, auto-encoder dimension, manifold learning method parameters). 
 
-<img src="../images/Clustering_malwares.png" alt="Clusters of malwares projected in 2D for visualization" width="600" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
+<img src="../images/Clustering_malwares.png" alt="Clusters of malwares projected in 2D for visualization" width="400" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
 
 
 #### Deployment
