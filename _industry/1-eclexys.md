@@ -1,7 +1,7 @@
 ---
-title: "AI/ML Research Scientist (Eclexys)"
+title: "AI/ML Research Scientist (Eclexys-Octilium)"
 permalink: /industry/eclexys
-excerpt: " In 2022, I joined [Eclexys](http://eclexys.com) a cybersecurity company located in Lugano, Switzerland. My primary responsibility was to develop innovative machine learning strategies for detecting malicious activity, using data gathered from a variety of sources. Given the company's strong cybersecurity expertise in securing medical data, I also contributed to healthcare projects focused on delivering innovative AI approaches. This experience allowed me to collaborate on the development of ML solutions for several European healthcare projects funded by Horizon 2020.
+excerpt: " In 2022, I joined [Eclexys-Octilium](http://eclexys.com) a cybersecurity company located in Lugano, Switzerland. My primary responsibility was to develop innovative machine learning strategies for detecting malicious activity, using data gathered from a variety of sources. Given the company's strong cybersecurity expertise in securing medical data, I also contributed to healthcare projects focused on delivering innovative AI approaches. This experience allowed me to collaborate on the development of ML solutions for several European healthcare projects funded by Horizon 2020.
 
 	The link above provides an overview of my professional journey at Eclexys, which includes exciting AI-driven projects in both cybersecurity and healthcare."
 collection: industry
@@ -9,7 +9,7 @@ collection: industry
 
 ## Overview
 
-During my professional experience at Eclexys, I had the opportunity to work on AI cutting-edge projects that blended both cybersecurity and healthcare. This period included meaningful work in those fields, with several notable projects that helped me grow both technically and professionally.
+During my professional experience at Eclexys-Octilium, I had the opportunity to work on AI cutting-edge projects that blended both cybersecurity and healthcare. This period included meaningful work in those fields, with several notable projects that helped me grow both technically and professionally.
 
 ---
 
