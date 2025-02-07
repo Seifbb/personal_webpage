@@ -112,7 +112,7 @@ For this approach, we relied on auto-encoders. More specifically, we selected da
 Building performance metrics' on this approach is somehow not straightforward, since "irregular activity" is not necessarily malicious. We therefore asked our domain experts during deployment to assess the alerts for whether the latter were considered interesting and worth further exploration, or whether they were simply uninteresting. The experiments were conducted on three separate and distinct network and yielded precisions of 39%, 74% and 79%. The difference in results found explanation in the quantity of available data on each network, where precision systematically augmented with more available data. 
 
 #### Active learning for the unsupervised approach
-We enhance our alert system with an active learning mechanism, based the on methodology developed in [*N2D: (Not Too) Deep Clustering via Clustering the Local Manifold of an Autoencoded Embedding*](https://ieeexplore.ieee.org/abstract/document/9413131). Essentially, the method involves an additional supervised layer on top of the initial AD auto-encoder. More precisely, we extract both the latent representation and reconstruction error for the samples positively flagged (unusual). We concatenate those to form single vectors before feeding them to an additional supervised layer leveraging the labels provided by domain expertise. In the original paper (TBD:cite same paper), a single-layer neural network is considered but in theory any supervised algorithm could be employed. We here took advantage of a double-layer neural network after a Bayesian hyperparameter search.
+We enhance our alert system with an active learning mechanism, based the on methodology developed in [*N2D: (Not Too) Deep Clustering via Clustering the Local Manifold of an Autoencoded Embedding*](https://ieeexplore.ieee.org/abstract/document/9413131). Essentially, the method involves an additional supervised layer on top of the initial AD auto-encoder. More precisely, we extract both the latent representation and reconstruction error for the samples positively flagged (unusual). We concatenate those to form single vectors before feeding them to an additional supervised layer leveraging the labels provided by domain expertise. In the original aforementioned paper, a single-layer neural network is considered but in theory any supervised algorithm could be employed. We here took advantage of a double-layer neural network after a Bayesian hyperparameter search.
 
 On deployment, the active learning enhancement showed to raise the precision around 90%, while maintaining the recall to a reasonable 80%, for a total accuracy of 94%.
 
@@ -171,7 +171,11 @@ As part of the AI healthcare team, I contributed to the development of an AI-bas
 
 In CAREUP, I worked on creating a framework for evaluating and predicting IC. I collaborated extensively with [INRCA](https://www.inrca.it/inrca/) researchers and [WUT](https://iot.ire.pw.edu.pl/) academicians on delivering a questionnaire-based evaluation of IC, and providing forecasting methods based on longitudinal collected data from different sources. The project is on the piloting phase (year 2025), and the collaboration work yielded co-authorship in two papers:
 
+
+#### Project co-authored papers
 TBD: put papers here 
+1. [*CAREUP: An Integrated Care Platform with Intrinsic Capacity Monitoring and Prediction Capabilities*](https://seifbb.github.io/personal_webpage/publication/CAREUP-an-integrated-care-platform-with-intrinsic-capacity-monitoring-and-prediction-apabilities), MDPI-Sensors, 2025
+2. [*ML-based Short Physical Performance Battery future score prediction based on questionnaire data*](https://seifbb.github.io/personal_webpage/publication/ML-based-sppb-future-score-prediction-based-on-questionnaire-data), 32nd Telecommunications Forum (TELFOR), 2024
 
 ---
 
