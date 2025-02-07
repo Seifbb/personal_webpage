@@ -31,6 +31,16 @@ Provided this new representation in terms of finite dictionary values, we could 
 
 <img src="../images/entropy_example.png" alt="Example of an entropy representation of a specific malware" width="400" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
 
+<div style="display: inline-block; margin-right: 10px;">
+  <img src="../images/malware_1.png" alt="Image 1" width="300" height="auto">
+</div>
+<div style="display: inline-block; margin-right: 10px;">
+  <img src="../images/malware_2.png" alt="Image 2" width="300" height="auto">
+</div>
+<div style="display: inline-block;">
+  <img src="../images/malware_3.png" alt="Image 3" width="300" height="auto">
+</div>
+
 #### Explored solutions
 Being able to detect similar malwares by simply comparing their entropy representation is an interesting feature but much more may be achieved with ML techniques. By considering the entropy representation as numerical time-series, several methods can be employed here for classification. However, leveraging time-series clustering in this situation might be quite tedious due to their different lengths, and the employed obfuscation techniques.
 
