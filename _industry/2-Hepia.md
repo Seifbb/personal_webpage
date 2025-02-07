@@ -27,7 +27,7 @@ The model for computing the radiation map relies on a computationally costly alg
 The outcome of the project was quite satisfying, as it led to a demonstrated 
 acceleration of two orders of magnitude (10 times faster on a single GPU compared to 40 CPUs), hence enabling the modeling of the entire Geneva region. The implementation on multiple GPUs was further deployed on the Amazon Web Services cloud for public use purposes, with a treatment cost reduced by a factor of 100 in comparison with the initial code version.
 
-<img src="../images/GPU_performance.png" alt="GPU speed-up" width="300" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
+<img src="../images/GPU_performance.png" alt="GPU speed-up" width="600" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
 
 [Download the poster](../slides/poster_hepia.pdf)
 [Download the report](../slides/master_thesis_hepia.pdf)
