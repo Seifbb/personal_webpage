@@ -29,13 +29,13 @@ Note: The dictionary of values grouping APIs is actually much larger than the ex
 Provided this new representation in terms of finite dictionary values, we could now infer probability distributions and leverage Shannon entropy representation for each executable. This not only provided a conversion in numerical values of original samples, but also provided a powerful graphical insight, allowing for immediate naked eye detection of similar patterns between different samples. 
 
 
-<img src="../images/entropy_example.png" alt="Example of an entropy representation of a specific malware" width="300" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
+<img src="../images/entropy_example.png" alt="Example of an entropy representation of a specific malware" width="400" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
 
 #### Explored solutions
 Being able to detect similar malwares by simply comparing their entropy representation is an interesting feature but much more may be achieved with ML techniques. By considering the entropy representation as numerical time-series, several methods can be employed here for classification. However, leveraging time-series clustering in this situation might be quite tedious due to their different lengths, and the employed obfuscation techniques.
 
 
-<img src="../images/entropy_obfuscation.png" alt="Obfuscation in same malware execution" width="300" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
+<img src="../images/entropy_obfuscation.png" alt="Obfuscation in same malware execution" width="600" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
 
 #### Optimal retained solution
  After several employed methods around entropy representation, a step back was taken by reconsidering the character representation of each sample. We decided to employ instead NLP techniques, assuming that each malware throughout its fingerprint, might associate a specific language or a discussion topic. Likewise, the problem cann be undertaken as text classification. Applying therefore regular NLP methods shall be much more robust, not only considering the different "documents" lengths, but also in regards with the noise introduced by obfuscation. 
