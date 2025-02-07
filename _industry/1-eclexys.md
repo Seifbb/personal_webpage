@@ -39,6 +39,10 @@ Provided this new representation in terms of finite dictionary values, we could 
 </div>
 <div style="display: inline-block;">
   <img src="../images/malware_3.png" alt="Image 3" width="300" height="auto">
+
+  <div style="display: inline-block;">
+  <img src="../images/malware_5.png" alt="Image 4" width="300" height="auto">
+
 </div>
 
 #### Explored solutions
@@ -61,7 +65,7 @@ of clusterability" (cite the article, talk about deep clustering). We used t-SNE
 #### The benchmark
 Although the algorithm was designed to be employed in the wild, we still needed some benchmark for evaluating the methodology. We designed a database of 1000 well identified malwares, distibuted homogeneously across five families. The result was 100% classification accuracy, and the method was judged stable with respect to the several hyperparameters (Doc2Vec several parameters, auto-encoder dimension, manifold learning method parameters). 
 
-<img src="../images/Clustering malwares.png" alt="Clusters of malwares projected in 2D for visualization" width="600" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
+<img src="../images/Clustering_malwares.png" alt="Clusters of malwares projected in 2D for visualization" width="600" height="auto" style="display:block; margin-left:auto; margin-right:auto;">
 
 
 #### Deployment
@@ -75,7 +79,6 @@ We were able to detect several malwares primarily absent from our database. Once
 - **Results**: 100% classification accuracy on the benchmark, several new malwares detected on deployment 
 - **Deployment**: Successful deployment, continuous running and follow-up on novel detections
 
-![Secure Network Infrastructure](path/to/your/image1.png)
 
 ### Project 2: Command prompt analysis - Anomaly detection & deviation from baseline (masquerade detection)
 
